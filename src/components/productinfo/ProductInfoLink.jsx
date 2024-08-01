@@ -10,7 +10,7 @@ const ProductInfoLink = ({ link }) => {
         <a className='mylink' href="#about">
           <img src={abajo} className="icon" alt='Down'/>
         </a>
-        <a href={link}>START YOUR JOURNEY HERE!</a>
+        <a className='lonk' href={link}>JOIN THE HERD HEREEE!</a>
         <a className='mylink' href="#about">
           <img src={abajo} className="icon" alt='Down'/>
         </a>

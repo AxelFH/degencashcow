@@ -4,7 +4,7 @@ import ProductInfoLink from '../components/productinfo/ProductInfoLink';
 import ProductImage from '../components/productinfo/ProductImage';
 
 import '../assets/styles/Info.css';
-import pokegochi from '../assets/images/pages/screen.png';
+import game from '../assets/images/cow/game.gif';
 
 
 const ProductInfo = () => {
@@ -12,13 +12,13 @@ const ProductInfo = () => {
     <div className="info">
       <div className="info-container">
         <ProductInfoCard
-          title="Memecoin + Gaming NFT!"
+          title="What is $Cash Cow!?"
         />
         <ProductInfoLink link="#about" />
 
       </div>
       <div className="image-container">
-        <ProductImage imageUrl={pokegochi} />
+        <ProductImage imageUrl={game} />
       </div>
     </div>
   );

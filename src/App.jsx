@@ -20,6 +20,8 @@ function App() {
       
       <Navbar></Navbar>
       <Hero></Hero>
+      <ProductInfo></ProductInfo>
+      <Contact></Contact>
     </>
   )
 }

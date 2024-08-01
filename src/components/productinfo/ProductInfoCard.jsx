@@ -6,22 +6,13 @@ const ProductInfoCard = ({ title, description, text1, text2 }) => {
       <h2>{title}</h2>
       <div className="info-text-container">
         <div className="info-text">
-          <h4 className='mini-title'>For the Degens</h4>
           <p className='mini-list'>
-            - Deflationary $EGG <br/> <br/>
-            - 25% of supply burned for liquidity pool<br/> <br/> 
-            - Mint auth revoked<br/> <br/>
-            - No buy/sell taxes 
+          Mega Degen Cash Cow is more than just a DeFi project—it’s a moo-vement. 
+          On the Solana blockchain, we combine humor with cutting-edge technology to create a platform that’s both entertaining and rewarding. 
+          Whether you’re a seasoned degen or new to the crypto pasture, our herd welcomes you!
           </p>
         </div>
-        <div className="info-text">
-          <h4 className='mini-title'>For NFT Enjoyers</h4>
-          <p className='mini-list'>
-            - Hatch eggs to Mint Pokegochi <br/> <br/>
-            - Win $XP IDLY by Battling with Pokegochi NFT's held in wallet <br/> <br/>
-            - Use $XP to evolve Pokegochi and win more battles or sell #XP in the market
-          </p>
-        </div>
+        
       </div>
     </div>
   );

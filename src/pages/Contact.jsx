@@ -1,26 +1,29 @@
 import React from 'react';
-import ContactTitle from '../components/productcontact/ContactTitle';
-import ContactCard from '../components/productcontact/ContactCard';
-
-import '../assets/styles/Contact.css'
-import telegram from '../assets/images/icons/telegrama.png';
-import x from '../assets/images/icons/x.png';
-import blog from '../assets/images/icons/blog.png';
-import discord from '../assets/images/icons/egg_hatching.gif';
-
+import '../assets/styles/Contact.css'; // Importa el archivo CSS para el footer
 
 const Contact = () => {
   return (
-    <div className="contact" id='more'>
-      <ContactTitle  
-      text="Do you have what it takes to be the next Pokegochi legend?" />
-      <div className="contact-card-container">
-        <ContactCard className={'contact-card-component focus'} imageSrc={discord} linkText="MINT" linkHref="https://tinyurl.com/HatchPokegochi" />
-        <ContactCard className={'contact-card-component altercard'} imageSrc={telegram} linkText="Telegram" linkHref="https://t.me/Pokegochi" />
-        <ContactCard className={'contact-card-component'} imageSrc={x} linkText="X/Twitter" linkHref="https://twitter.com/PokegochiSOL" />
-        <ContactCard className={'contact-card-component altercard'} imageSrc={blog }linkText="Whitepaper" linkHref="https://whitepaper.pokegochi.io/" />
+    <footer className="footer">
+      <div className="footer-content">
+        <div className="footer-section">
+          <h2>Contact Us</h2>
+          <p>If you have any questions, feel free to reach out to us!</p>
+        </div>
+        <div className="footer-section">
+          <h2>Follow Us</h2>
+          <div className="footer-links">
+            <a href="https://twitter.com" className="footer-link">Twitter</a>
+            <a href="https://facebook.com" className="footer-link">Facebook</a>
+            <a href="https://instagram.com" className="footer-link">Instagram</a>
+          </div>
+        </div>
+        <div className="footer-section">
+          <h2>Legal</h2>
+          <a href="/privacy-policy" className="footer-link">Privacy Policy</a>
+          <a href="/terms-of-service" className="footer-link">Terms of Service</a>
+        </div>
       </div>
-    </div>
+    </footer>
   );
 }
 

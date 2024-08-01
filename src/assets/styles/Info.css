@@ -1,17 +1,16 @@
 .info {
     display: flex;
-    margin-top: -9vw;
+    margin-top: 5vw;
     justify-content: space-between;
     padding: 1vw;
 }
 
-h2,
-a {
-    font-family: 'Press Start 2P' !important;
+h2,a {
+    font-family: 'Chelsea Market' !important;
 }
 
 h2 {
-    font-size: 1.5vw !important;
+    font-size: 2.5vw !important;
 }
 
 p {
@@ -28,20 +27,18 @@ a {
     text-align: center;
 }
 
-p,
-h2,
-a {
+p,h2,a {
     color: #fff !important;
 }
 
 .info-container {
     margin-left: 2vw;
-    width: 50%;
+    width: 100%;
     padding: 1vw;
 }
 
 .product-info-card {
-    background-color: #91bc74;
+    background-color: #bdd5e0;
     padding: 5vw;
     border-radius: 1vw;
     box-shadow: 0.3vw 0.3vw 1.2vw rgba(6, 29, 34, 0.5);
@@ -52,12 +49,12 @@ a {
     align-items: center;
 }
 
-.product-info-card h2{
+.product-info-card h2 {
     color: #12444e !important;
 }
 
 .external-link-card {
-    background-color: #91bc74;
+    background-color: #bdd5e0;
     padding: 1vw;
     height: 5% !important;
     border-radius: 1vw;
@@ -68,7 +65,8 @@ a {
 }
 
 .external-link-card:hover {
-    background-color: #346C54;
+    background-color: #bdd5e0;
+;
 }
 
 .link-content {
@@ -99,15 +97,17 @@ a {
     margin: auto;
     display: flex;
     align-items: flex-start;
-    min-width: 200px; /* Tamaño mínimo relativo al contenedor */
+    min-width: 200px;
+    /* Tamaño mínimo relativo al contenedor */
 }
 
 .product-image img {
-    max-width: 100%; 
-    height: auto;
+    max-width: 100%;
+    height: 28vw;
     border-radius: 5px;
     text-align: center;
-    min-width: 100%; /* Tamaño mínimo relativo */
+    min-width: 100%;
+    /* Tamaño mínimo relativo */
 }
 
 
@@ -118,26 +118,35 @@ a {
     width: 100%;
 }
 
+.lonk{
+    font-family: "Chelsea Market" !important;
+}
+
 .mylink {
-    width: 4.5vw !important; /* Tamaño deseado */
-    height: auto !important; /* Altura automática para mantener la proporción de la imagen */
-    display: inline-block !important; /* Para que el enlace ocupe solo el espacio de su contenido */
-    margin: auto 1vw !important; /* Centrar el enlace horizontalmente */
+    width: 4.5vw !important;
+    /* Tamaño deseado */
+    height: auto !important;
+    /* Altura automática para mantener la proporción de la imagen */
+    display: inline-block !important;
+    /* Para que el enlace ocupe solo el espacio de su contenido */
+    margin: auto 1vw !important;
+    
+    /* Centrar el enlace horizontalmente */
 }
 
 
 .info-text {
-    width: calc(50% - 1vw);
+    width: 100%;
     margin-top: 0.7vw;
-    background-color: #DFF8D0;
+    background-color: #ffffff;
     border-radius: 2vw;
 }
 
 .mini-title {
     margin-top: 1.5vw;
     text-align: center;
-    text-shadow: 0.4vw 0.4vw 1.6vw rgba(126, 110, 167, 0.5); 
-    font-family: 'Press Start 2P' !important;
+    text-shadow: 0.4vw 0.4vw 1.6vw rgba(126, 110, 167, 0.5);
+    font-family: 'Chelsea Market' !important;
     font-size: 0.9vw;
     font-weight: bold;
 }
@@ -145,10 +154,10 @@ a {
 .mini-list {
     margin-top: 1.2vw !important;
     padding: 0.5vw;
-    text-align: center;
+    text-align: justify;
     color: #12444e !important;
-    font-family: 'Press Start 2P' !important;
-    font-size: 0.72vw;
+    font-family: 'Chelsea Market' !important;
+    font-size: 1vw;
     font-weight: 400;
 }
 
@@ -160,17 +169,17 @@ a {
         margin-top: -0.5vw;
     }
 
-    .external-link-card{
+    .external-link-card {
         margin-top: 5vw !important;
         height: 16vw !important;
         border-radius: 15px !important;
         padding: 2vw !important;
     }
 
-    .link-content{
+    .link-content {
         width: 100% !important;
     }
-    
+
     .link-content a {
         text-decoration: none;
         width: 100%;
@@ -179,14 +188,18 @@ a {
     }
 
     .mylink {
-        width: 5vw !important; /* Tamaño deseado */
-        height: auto !important; /* Altura automática para mantener la proporción de la imagen */
-        display: inline-block !important; /* Para que el enlace ocupe solo el espacio de su contenido */
-        margin: auto 3vw!important; /* Centrar el enlace horizontalmente */
+        width: 5vw !important;
+        /* Tamaño deseado */
+        height: auto !important;
+        /* Altura automática para mantener la proporción de la imagen */
+        display: inline-block !important;
+        /* Para que el enlace ocupe solo el espacio de su contenido */
+        margin: auto 3vw !important;
+        /* Centrar el enlace horizontalmente */
     }
 
 
-    
+
     h2 {
         font-size: 6vw !important;
     }
@@ -196,7 +209,7 @@ a {
         margin-left: 0px;
         margin-top: 0vw;
         padding: 0 1vw;
-        
+
     }
 
     .info-container {
@@ -205,11 +218,11 @@ a {
         padding: 5vw;
     }
 
-    .mini-title{
+    .mini-title {
         font-size: 4.5vw !important;
     }
 
-    .mini-list{
+    .mini-list {
         margin-top: 8vw !important;
         font-size: 3.5vw !important;
     }
@@ -264,21 +277,21 @@ a {
     .product-image img {
         width: 100%;
         margin-left: 4vw !important;
-    }   
+    }
 }
 
 @media (max-width: 415px) {
     .product-image img {
         width: 100%;
         margin-left: 3.6vw !important;
-    }   
+    }
 }
 
 @media (min-width: 390px) {
     .product-image img {
         width: 100%;
         margin-left: 2.7vw !important;
-    }   
+    }
 }
 
 @media (max-width: 768px) {
@@ -286,6 +299,5 @@ a {
         width: 50vw;
         height: 50vw;
         margin-left: 13.5vw !important;
-    }   
+    }
 }
-

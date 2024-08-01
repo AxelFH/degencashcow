@@ -17,7 +17,8 @@
     align-items: center;
     width: 55vh; /* Ajusta el tamaño según sea necesario */
     height: 55vh;
-    background: linear-gradient(to bottom, #d85cbd, #feb47b); /* Fondo gradiente vertical simulando colores del atardecer */    border-radius: 50%;
+    background: linear-gradient(to bottom, #d85cbd, #feb47b); /* Fondo gradiente vertical simulando colores del atardecer */    
+    border-radius: 50%;
     overflow: hidden;
     position: relative;
     z-index: 2; /* Asegura que el contenedor circular esté por encima de las nubes */
@@ -35,6 +36,7 @@
 }
 
 .text-container {
+    width: 89%;
     color: white;
     text-align: center;
     margin-bottom: 20px;
@@ -49,6 +51,12 @@
 .text-container h3 {
     font-family: 'Chelsea Market', sans-serif;
     font-size: 1.5vw;
+}
+
+.tolink{
+    font-family: 'Chelsea Market' !important;
+    font-size: 1.5vw;
+    text-decoration: none;
 }
 
 .cloud-container {
@@ -73,36 +81,42 @@
     top: 10%;
     left: -200px; /* Posiciona la nube fuera del borde izquierdo de la pantalla */
     animation: moveClouds 60s linear infinite;
+    animation-delay: 0s;
 }
 
 .cloud2 {
     top: 30%;
     left: -200px; /* Posiciona la nube fuera del borde izquierdo de la pantalla */
     animation: moveClouds 75s linear infinite;
+    animation-delay: 10s;
 }
 
 .cloud3 {
     top: 50%;
     left: -200px; /* Posiciona la nube fuera del borde izquierdo de la pantalla */
     animation: moveClouds 90s linear infinite;
+    animation-delay: 20s;
 }
 
 .cloud4 {
     top: 70%;
     left: -200px; /* Posiciona la nube fuera del borde izquierdo de la pantalla */
     animation: moveClouds 85s linear infinite;
+    animation-delay: 5s;
 }
 
 .cloud5 {
     top: 20%;
     left: -200px; /* Posiciona la nube fuera del borde izquierdo de la pantalla */
     animation: moveClouds 65s linear infinite;
+    animation-delay: 15s;
 }
 
 .cloud6 {
     top: 40%;
     left: -200px; /* Posiciona la nube fuera del borde izquierdo de la pantalla */
     animation: moveClouds 80s linear infinite;
+    animation-delay: 25s;
 }
 
 @keyframes moveClouds {
