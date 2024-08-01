@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Chelsea Market';
+  src: url('../src/assets/fonts/ChelseaMarket-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IM Fell DW Pica';
+  src: url('../src/assets/fonts/IMFellDWPica-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IM Fell DW Pica';
+  src: url('../src/assets/fonts/IMFellDWPica-Regular.ttf') format('truetype');
+}
+
+body{
+  background-color: rgb(142, 209, 97) !important;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    overflow: hidden;
+  }
+
+  .navbar-brand img {
+    max-width: 120px; 
+    height: auto; 
+  }
+
+  .navbar-toggler {
+    padding: .25rem .75rem; 
+  }
+
+  .navbar-toggler-icon {
+    font-size: 1.5rem;
+  }
+
+
+}
+
+@media (max-width: 380px) {
+  body{
+    width: 109.4% !important;
+  }
+}
