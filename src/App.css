@@ -14,7 +14,7 @@
 }
 
 body{
-  background-color: rgb(142, 209, 97) !important;
+  background-color: #333 !important;
 }
 
 @media (max-width: 768px) {

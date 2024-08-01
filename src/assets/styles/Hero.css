@@ -1,21 +1,33 @@
 .professor-section {
     position: relative;
-    height: 95vh; /* Ajusta la altura para que sea toda la pantalla */
-    width: 98.5vw; /* Ajusta el ancho para que sea toda la pantalla */
-    margin-top: 0; /* Ajusta el margen según sea necesario */
-    overflow: hidden; /* Asegúrate de que la sección no tenga desbordamiento */
-    background-size: cover; /* Ajusta el tamaño de fondo para cubrir todo el contenedor */
-    display: block;
+    height: 95vh;
+    width: 98.5vw;
+    margin-top: 0;
+    overflow: hidden;
+    background-size: cover;
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55vh; /* Ajusta el tamaño según sea necesario */
+    height: 55vh;
+    background: linear-gradient(to bottom, #d85cbd, #feb47b); /* Fondo gradiente vertical simulando colores del atardecer */    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2; /* Asegura que el contenedor circular esté por encima de las nubes */
 }
 
 .character-image {
-    margin-top: 10vh;
-    margin-left: 10vw;
-    width: auto;
-    height: 50vh; /* Ajusta la altura del personaje según sea necesario */
-    transition: transform 0.3s ease-in-out; /* Agrega la transición para el efecto de zoom */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el GIF dentro del contenedor */
+    transition: transform 0.3s ease-in-out;
 }
 
 .character-image:hover {
@@ -23,47 +35,111 @@
 }
 
 .text-container {
-    margin-left: 2vw; /* Ajusta el margen según sea necesario */
-    color: white; /* Color del texto */
-    text-align: left; /* Alineación del texto */
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: 2; /* Asegura que el texto esté por encima de las nubes */
 }
 
 .text-container h1 {
-    margin-top: 5vh;
-    font-family: 'Chelsea Market' !important;
-    font-size: 4vw; /* Ajusta el tamaño de la fuente del título */
-    text-align: center;
+    font-family: 'Chelsea Market', sans-serif;
+    font-size: 4vw;
 }
 
 .text-container h3 {
-    font-family: 'Chelsea Market' !important;;
-    font-size: 1.5vw; /* Ajusta el tamaño de la fuente del subtítulo */
-    text-align: center !important;
+    font-family: 'Chelsea Market', sans-serif;
+    font-size: 1.5vw;
+}
+
+.cloud-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Asegura que las nubes no interfieran con la interacción del usuario */
+    z-index: 1; /* Asegura que las nubes estén detrás del texto y el contenedor circular */
+    overflow: hidden;
+}
+
+.cloud {
+    position: absolute;
+    width: 200px; /* Ajusta el tamaño de las nubes según sea necesario */
+    height: auto;
+    opacity: 0.8; /* Ajusta la opacidad para un efecto más suave */
+}
+
+.cloud1 {
+    top: 10%;
+    left: -200px; /* Posiciona la nube fuera del borde izquierdo de la pantalla */
+    animation: moveClouds 60s linear infinite;
+}
+
+.cloud2 {
+    top: 30%;
+    left: -200px; /* Posiciona la nube fuera del borde izquierdo de la pantalla */
+    animation: moveClouds 75s linear infinite;
+}
+
+.cloud3 {
+    top: 50%;
+    left: -200px; /* Posiciona la nube fuera del borde izquierdo de la pantalla */
+    animation: moveClouds 90s linear infinite;
+}
+
+.cloud4 {
+    top: 70%;
+    left: -200px; /* Posiciona la nube fuera del borde izquierdo de la pantalla */
+    animation: moveClouds 85s linear infinite;
+}
+
+.cloud5 {
+    top: 20%;
+    left: -200px; /* Posiciona la nube fuera del borde izquierdo de la pantalla */
+    animation: moveClouds 65s linear infinite;
+}
+
+.cloud6 {
+    top: 40%;
+    left: -200px; /* Posiciona la nube fuera del borde izquierdo de la pantalla */
+    animation: moveClouds 80s linear infinite;
+}
+
+@keyframes moveClouds {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100vw);
+    }
+    50.01% {
+        transform: translateX(-200px); /* Vuelve al punto de inicio sin mostrar el salto */
+    }
+    100% {
+        transform: translateX(100vw);
+    }
 }
 
 @media (max-width: 768px) {
     .professor-section {
-        flex-direction: column; /* Cambia la dirección del flex a columna en pantallas pequeñas */
         padding: 3vw;
         margin-top: 15vw;
     }
 
-    .character-image {
-        width: 100%;
-        height: auto;
-        max-height: 80%;
-    }
-
-    .text-container {
-        margin-left: 0; /* Ajusta el margen para pantallas pequeñas */
-        text-align: center; /* Centra el texto en pantallas pequeñas */
+    .circle-container {
+        width: 200px;
+        height: 200px;
     }
 
     .text-container h1 {
-        font-size: 6vw; /* Ajusta el tamaño del título para pantallas pequeñas */
+        font-size: 6vw;
     }
 
     .text-container h3 {
-        font-size: 4vw; /* Ajusta el tamaño del subtítulo para pantallas pequeñas */
+        font-size: 4vw;
+    }
+
+    .cloud {
+        width: 100px;
     }
 }
