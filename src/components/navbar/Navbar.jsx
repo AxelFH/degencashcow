@@ -29,17 +29,14 @@ const CustomNavbar = () => {
         <Nav className="ml-auto links">
           <Nav.Link className='lnk' href="https://x.com/CashCow_SOL_" target='_blank'>X</Nav.Link>
           <Nav.Link className='lnk' href="https://t.co/euMXYpb4Mf" target='_blank'>Telegram</Nav.Link>
+          <Nav.Link className='lnk' href="#">Tokenomics</Nav.Link>
+          <Nav.Link className='lnk' href="#">How to Buy</Nav.Link>
           <Nav.Link className='lnk' href="#">Whitepaper</Nav.Link>
-          <Nav.Link className='lnk' href="#">About</Nav.Link>
-          <Nav.Link className='lnk' href="#">Farm</Nav.Link>
-          <Nav.Link className='lnk' href="#" target='_blank'>Market</Nav.Link>
         </Nav>
         <a href="#" target='_blank'>
           <Button className='p-2' variant="outline-light"><span>$Cash</span></Button>
         </a>
-        <a href="#" target='_blank' className='btn2'>
-          <Button className='p-2' variant="outline-light"><span>$Cash</span></Button>
-        </a>
+
       </Navbar.Collapse>
     </Navbar>
   );

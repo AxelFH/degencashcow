@@ -4,12 +4,12 @@
 }
 
 .links{
-  width: 53vw;
-  gap: 2vw;
+  width: 65vw;
+  gap: 3vw;
 }
 
 .links-area{
-  margin-left: 5vh;
+  margin-left: 10vh;
 }
 
 @keyframes pulse {
@@ -154,8 +154,8 @@
 
 @media (max-width: 768px) {
   .logo-image {
-    width: auto;
-    height: auto;
+    width: 10vh;
+    height: 10vh;
     margin: auto 10vw;
   }
 
@@ -167,6 +167,7 @@
     width: 100%;
     text-align: center !important;
     text-decoration: underline #fff;
+    margin-left: -15vw;
   }
 
   .lnk{

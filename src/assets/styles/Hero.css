@@ -156,4 +156,10 @@
     .cloud {
         width: 100px;
     }
+    .tolink{
+        font-family: 'Chelsea Market' !important;
+        font-size: 5vw !important;
+        text-decoration: none;
+    }
+    
 }
