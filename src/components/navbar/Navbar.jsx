@@ -34,7 +34,7 @@ const CustomNavbar = () => {
           <Nav.Link className='lnk' href="#">Whitepaper</Nav.Link>
         </Nav>
         <a href="#" target='_blank'>
-          <Button className='p-2' variant="outline-light"><span>$Cash</span></Button>
+          <Button className='p-2' variant="outline-light"><span>$Moo</span></Button>
         </a>
 
       </Navbar.Collapse>

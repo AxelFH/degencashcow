@@ -154,20 +154,23 @@
 
 @media (max-width: 768px) {
   .logo-image {
-    width: 10vh;
-    height: 10vh;
+    width: 8vh;
+    height: 8vh;
     margin: auto 10vw;
   }
 
   .burguer {
     margin: auto !important;
+    margin-left: 30vw !important;
   }
+
+  
 
   .links {
     width: 100%;
     text-align: center !important;
     text-decoration: underline #fff;
-    margin-left: -15vw;
+    margin-left: -10vw;
   }
 
   .lnk{
@@ -177,7 +180,7 @@
 
 
   .btn {
-    margin: auto 10vw !important;
+    margin: auto 14vw !important;
     height: 13vw;
     border-radius: 30px !important;
     width: 30vw !important; 

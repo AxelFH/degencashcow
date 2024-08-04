@@ -22,7 +22,7 @@ const ProfessorSection = () => {
                 />
             </div>
             <div className="text-container">
-                <h1>Moo-ve Over for Mega Degen $Cash Cow!</h1>
+                <h1>Moo-ve Over for Mega Degen Cow!</h1>
                 <h3>Welcome to the Moost Degen Cash Cow on the Solana Blockchain. Where the grass is greener, and the profits are mooooore bountiful. <a className="tolink" href="#">Join the DegenFi Moovement 💰🐄</a></h3>
             </div>
         </div>

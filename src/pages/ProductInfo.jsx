@@ -12,7 +12,7 @@ const ProductInfo = () => {
     <div className="info">
       <div className="info-container">
         <ProductInfoCard
-          title="What is $Cash Cow!?"
+          title="What is Degen Cow!?"
         />
         <ProductInfoLink link="#about" />
 
